@@ -1,0 +1,110 @@
+.main-header {
+  height: 156px;
+  background-color: var(--background-color-primary);
+}
+
+.logo-menu {
+  height: 126px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-header .logo-menu .logo {
+  font-family: "Jaro", sans-serif;
+  font-size: 48px;
+  font-weight: 400px;
+  line-height: 84%;
+  letter-spacing: -6%;
+  color: var(--logo-color);
+  display: inline-block;
+}
+
+
+.main-header .logo-menu .menu.tablet{
+    display: none;
+}
+
+.main-header .logo-menu .menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.main-header .logo-menu .menu .menu-link {
+  font-family: "Jaro", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 139%;
+  letter-spacing: 0;
+  color: var(--text-color-primary);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .main-header {
+    height: 480.14px;
+  }
+
+  .logo-menu {
+  height: 460.11px;
+  padding: 30px 30px;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 20px;
+}
+
+.main-header .logo-menu .menu.mobile{
+    display: none;
+}
+
+.main-header .logo-menu .menu.tablet{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-header .logo-menu .menu.tablet ul{
+    flex-direction: row;
+    align-content: space-between;
+    flex-wrap: wrap;
+    border-top: 0.5px solid var(--logo-color) ;
+    width: 100%;
+    
+}
+
+.main-header .logo-menu .menu.tablet p{
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--text-color-primary);
+    line-height: 135%;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+
+.main-header .logo-menu .menu .menu-link {
+  font-family: "Jaro", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 139%;
+  letter-spacing: -1px;
+  color: var(--text-color-primary);
+  text-decoration: none;
+}
+
+.main-header .logo-menu .logo {
+  font-size: 248px;
+  font-weight: 400px;
+  line-height: 84%;
+  letter-spacing: 6px;
+  gap: 20px;
+
+}
+
+
+}
