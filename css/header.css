@@ -1,0 +1,159 @@
+.main-header {
+  height: 156px;
+  background-color: var(--background-color-primary);
+}
+
+.logo-menu {
+  height: 126px;
+  padding: 20px 30px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-header .logo-menu .logo.mobile img {
+  width: 107px;
+  height: 36px;
+}
+
+.main-header .logo-menu .logo.tablet {
+  display: none;
+}
+
+.main-header .logo-menu .menu.tablet {
+  display: none;
+}
+
+.main-header .logo-menu .menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.main-header .logo-menu .menu .menu-link {
+  font-family: "Jaro", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 139%;
+  letter-spacing: 0;
+  color: var(--text-color-primary);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .main-header {
+    height: 480.14px;
+  }
+
+  .logo-menu {
+    height: 460.11px;
+    padding: 30px 30px;
+    margin-bottom: 0;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20.77px;
+  }
+
+  .main-header .logo-menu .menu.mobile {
+    display: none;
+  }
+
+  .main-header .logo-menu .logo.mobile {
+    display: none;
+  }
+  .main-header .logo-menu .logo.tablet {
+    display: block;
+    width: 100%;
+    height: 269px;
+  }
+
+  .main-header .logo-menu .menu.tablet {
+    width: 100%;
+    height: 131px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-header .logo-menu .menu.tablet ul {
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 0.5px solid var(--logo-color);
+    padding: 8px 0;
+    width: 100%;
+  }
+
+  .main-header .logo-menu .menu.tablet p {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--text-color-primary);
+    line-height: 135%;
+    letter-spacing: 1%;
+    margin-bottom: 50px;
+  }
+
+  .main-header .logo-menu .menu .menu-link {
+    font-family: "Jaro", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 139%;
+    letter-spacing: -1px;
+    color: var(--text-color-primary);
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .main-header {
+    height: 276.76px;
+    
+  }
+
+  .logo-menu {
+    height: 244.71px;
+    padding: 60px 30px 30px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 70px;
+  }
+
+  .main-header .logo-menu .logo.tablet {
+    width: 575px;
+    height: 154.71px;
+  }
+
+  .main-header .logo-menu .menu.tablet {
+    width: 575px;
+    height: 154.71px;
+    align-items: start;
+    gap: 63.71px;
+    padding-right: 30px;
+  }
+
+  .main-header .logo-menu .menu.tablet p {
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: 1%;
+    margin-bottom: 0;
+    
+  }
+
+  .main-header .logo-menu .menu .menu-link{
+    font-size: 26px;
+    letter-spacing: -2%;
+
+  }
+}  
+
+  @media screen and (min-width: 1440px) {
+  .logo-menu  {
+    padding: 60px 10rem 30px 10rem;
+    
+    
+  }
+}
