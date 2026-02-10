@@ -41,8 +41,22 @@
   box-sizing: border-box;
 }
 
-.xadrez {
-  height: 20px;
-  background: url(../img/Decorative\ border.png);
-  
+.faixa {
+  width: 100%;
+  height: 20.03px;
+  background: url(../img/faixa-header-desktop.png);
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .faixa {
+    background-size: contain;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .faixa {
+    height: 32.05px;
+    background-size: contain;
+  }
 }
