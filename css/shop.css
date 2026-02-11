@@ -1,0 +1,90 @@
+.shop {
+  width: 100%;
+  height: auto;
+}
+.shop .hero {
+  background: url(../img/shop-hero-mobile.jpg) no-repeat;
+  background-size: cover;
+  height: 536px;
+}
+.shop-link {
+  background-color: var(--background-color-secondary);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: start;
+}
+
+.shop-link h3 {
+  font-family: "Staatliches", sans-serif;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: var(--text-color-primary);
+  font-weight: 400;
+}
+
+.shop-link a {
+  text-decoration: none;
+  color: var(--background-color-secondary);
+  background-color: var(--text-color-primary);
+  font-family: "Jaro", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 139%;
+  width: 119px;
+  padding: 8px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.shop-link a:hover {
+  background-color: var(--background-color-secondary);
+  color: var(--text-color-primary);
+}
+
+@media screen and (min-width: 768px) {
+  .shop .hero {
+    background: url(../img/shop-hero-tablet.jpg) no-repeat;
+    background-size: cover;
+    height: 540px;
+  }
+
+  .shop-link {
+    max-width: 450px;
+  }
+
+  .shop-link h3 {
+    font-size: 38px;
+    line-height: 110%;
+    letter-spacing: 0.01em;
+  }
+
+  .shop-link a {
+    font-size: 24px;
+    line-height: 139%;
+    letter-spacing: -0.01em;
+    width: 151px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .shop .hero {
+    background: url(../img/shop-hero-desktop.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 540px;
+  }
+
+  .shop-link {
+    background-color: var(--background-color-secondary);
+    padding: 30px;  
+    height: 100%;
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: start;
+  }
+}

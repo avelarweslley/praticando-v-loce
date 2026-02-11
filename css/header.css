@@ -1,5 +1,5 @@
 .main-header {
-  height: 156px;
+  height: auto;
   background-color: var(--background-color-primary);
 }
 
@@ -45,16 +45,15 @@
 
 @media screen and (min-width: 768px) {
   .main-header {
-    height: 480.14px;
+    width: 100%;
   }
 
   .logo-menu {
-    height: 460.11px;
+    height: auto;
     padding: 30px 30px;
     margin-bottom: 0;
     flex-direction: column-reverse;
     align-items: center;
-    gap: 20.77px;
   }
 
   .main-header .logo-menu .menu.mobile {
@@ -64,15 +63,16 @@
   .main-header .logo-menu .logo.mobile {
     display: none;
   }
+
   .main-header .logo-menu .logo.tablet {
     display: block;
     width: 100%;
-    height: 269px;
+    height: auto;
   }
 
   .main-header .logo-menu .menu.tablet {
     width: 100%;
-    height: 131px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,30 +108,18 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .main-header {
-    height: 276.76px;
-    
-  }
-
   .logo-menu {
-    height: 244.71px;
-    padding: 60px 30px 30px 30px;
+    padding: 30px 30px 30px 30px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     gap: 70px;
   }
 
-  .main-header .logo-menu .logo.tablet {
-    width: 575px;
-    height: 154.71px;
-  }
-
   .main-header .logo-menu .menu.tablet {
-    width: 575px;
-    height: 154.71px;
-    align-items: start;
-    gap: 63.71px;
+    height: 154px;
+    align-items: self-start;
+    justify-content: space-between;
+    gap: 100px;
     padding-right: 30px;
   }
 
@@ -140,20 +128,11 @@
     line-height: 130%;
     letter-spacing: 1%;
     margin-bottom: 0;
-    
+    text-align: left;
   }
 
-  .main-header .logo-menu .menu .menu-link{
+  .main-header .logo-menu .menu .menu-link {
     font-size: 26px;
     letter-spacing: -2%;
-
-  }
-}  
-
-  @media screen and (min-width: 1440px) {
-  .logo-menu  {
-    padding: 60px 10rem 30px 10rem;
-    
-    
   }
 }
