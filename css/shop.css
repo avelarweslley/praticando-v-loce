@@ -16,7 +16,7 @@
   align-items: start;
 }
 
-.shop-link h3 {
+.shop-link h2 {
   font-family: "Staatliches", sans-serif;
   font-size: 32px;
   line-height: 120%;
@@ -26,6 +26,7 @@
 }
 
 .shop-link a {
+  text-transform: uppercase;
   text-decoration: none;
   color: var(--background-color-secondary);
   background-color: var(--text-color-primary);

@@ -1,0 +1,59 @@
+.description {
+  width: 100%;
+  height: auto;
+  padding: 30px 20px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: start;
+}
+
+.description h1 {
+  text-transform: uppercase;
+  font-family: "Staatliches", sans-serif;
+  font-size: 40px;
+  line-height: 110%;
+  font-weight: 400;
+}
+
+.description a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-color-primary);
+  font-family: "Jaro", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 139%;
+  width: 114px;
+  padding: 8px;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid var(--text-color-primary);
+}
+
+.description a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+  .description {
+    padding: 30px 30px 100px;
+  }
+  .description h1 {
+    font-size: 50px;
+  }
+  .description a {
+    width: 143px;
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .description h1 {
+    font-size: 60px;
+  }
+  .description a {
+    width: 150px;
+    font-size: 26px;
+  }
+}
