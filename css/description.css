@@ -8,6 +8,13 @@
   align-items: start;
 }
 
+.description .description-contents{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: start;
+}
+
 .description h1 {
   text-transform: uppercase;
   font-family: "Staatliches", sans-serif;
@@ -49,7 +56,12 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .description {
+   align-items: center;
+    
+  }
   .description h1 {
+    max-width: 1440px;
     font-size: 60px;
   }
   .description a {
