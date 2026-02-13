@@ -17,6 +17,7 @@
 }
 
 .description a {
+  text-transform: uppercase;
   text-decoration: none;
   color: var(--text-color-primary);
   font-family: "Jaro", sans-serif;
@@ -30,6 +31,29 @@
   border: 2px solid var(--text-color-primary);
 }
 
-.description a:hover{
-    background-color: rgba(0, 0, 0, 0.1);
+.description a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+  .description {
+    padding: 30px 30px 100px;
+  }
+  .description h1 {
+    font-size: 50px;
+  }
+  .description a {
+    width: 143px;
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .description h1 {
+    font-size: 60px;
+  }
+  .description a {
+    width: 150px;
+    font-size: 26px;
+  }
 }

@@ -26,6 +26,7 @@
 }
 
 .shop-link a {
+  text-transform: uppercase;
   text-decoration: none;
   color: var(--background-color-secondary);
   background-color: var(--text-color-primary);
